@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/teststyle.css" />
+
+        <title>THE RIDGE</title>
+
+        <style>
+
+            @font-face {
+            font-family: 'Body';
+            src: url("/fonts/rajdhani/Rajdhani-Medium.ttf") format("truetype");
+            font-weight: 400;
+            }
+
+            @font-face {
+            font-family: 'Body-Bold';
+            src: url("/fonts/rajdhani/Rajdhani-Bold.ttf") format("truetype");
+            font-weight: 700;
+            }
+
+            @font-face {
+            font-family: 'Heading';
+            src: url("/fonts/furore/Furore.otf") format("truetype");
+            font-weight: 800;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-left">
+                <menu-icon color="var(--primary)"  secondary="var(--secondary)" size="2.5rem"></menu-icon>
+            </div>
+
+            <div class="header-center">
+                <p>THE RIDGE</p>
+            </div>
+
+
+            <div class="header-right">
+                <style-icon color="var(--primary)" size="2.5rem"></style-icon>
+            </div>
+
+
+        </header>
+
+        <div class="content">
+        <main>
+        <article>
+            <h2 class="number">02 // SERVICES</h2>
+            <hr class="color-hr">
+            <div class="services">
+                <div class="card">
+                    <h2 class="number">01 // FILES</h2>
+                    <hr class="color-hr">
+
+                    <h3 class="name">Nextcloud</h3>
+                    <p class="description">Personal cloud files</p>
+
+                    <a href="https://nextcloud.theridge.dedyn.io" class="a-external">
+                        LAUNCH
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h2 class="number">02 // MEDIA</h2>
+                    <hr class="color-hr">
+
+                    <h3 class="name">Jellyfin</h3>
+                    <p class="description">Music and movies</p>
+
+                    <a href="https://jellyfin.theridge.dedyn.io" class="a-external">
+                        LAUNCH
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h2 class="number">03 // INFORMATION</h2>
+                    <hr class="color-hr">
+
+                    <h3 class="name">About</h3>
+                    <p class="description">How and why this <br>website was made</p>
+
+                    <a href="/about" class="a-external">
+                        LAUNCH
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h2 class="number">04 // STYLIZATION</h2>
+                    <hr class="color-hr">
+
+                    <h3 class="name">Theme Engine</h3>
+                    <p class="description">Chose a color scheme</p>
+
+                    <div id="palette-options" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; margin: 8px;">
+                        <p>LOADING</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2 class="number">03 // FEATURED</h2>
+            <hr class="color-hr">
+        </article>
+        </main>
+
+        <aside>
+        <article>
+            <p class="number">00 // INTRODUCTION</p>
+            <hr class="color-hr">
+
+            <h2>Welcome to: <br> <span style="font-family: Heading;">The Ridge</span></h2>
+            <hr>
+
+            <p>The Ridge is a self hosted site for files, projects, and other resources. Built on recycled hardware preforms as both a server and a learning project for what goes into running the internet. </p>
+            <hr>
+
+            <table>
+            <tr>
+                <td><p>DATE</p></td>
+                <td> >> </td>
+                <td id="welcome-date" style="text-align: right;"><p>8/3/26</p></td>
+            </tr>
+            <tr>
+                <td><p>TIME</p></td>
+                <td> >> </td>
+                <td id="welcome-time" style="text-align: right;"><p>XX:XX:XX</p></td>
+            </tr>
+            <tr>
+                <td><p>ACCESS</p></td>
+                <td> >> </td>
+                <td id="welcome-access" style="text-align: right;"><p>EXTERNAL</p></td>
+            </tr>
+            <tr>
+                <td><p>STATUS</p></td>
+                <td> >> </td>
+                <td id="welcome-status" style="text-align: right;"><p>HEALTHY</p></td>
+            </tr>
+            </table>
+        </article>
+        <article>
+            <p class="number">01 // STATISTICS</p>
+            <hr class="color-hr">
+
+            <table>
+            <tr>
+                <td><p>UPTIME</p></td>
+                <td> >> </td>
+                <td style="text-align: right;"><p><span id="stats-uptime">--W --D --H</span></p></td>
+            </tr>
+            <tr>
+                <td><p>SERVICES</p></td>
+                <td> >> </td>
+                <td style="text-align: right;"><p><span id="stats-services">-/-</span> ONLINE</p></td>
+            </tr>
+            <tr>
+                <td><p>STORAGE</p></td>
+                <td> >> </td>
+                <td style="text-align: right;"><p><span id="stats-storage">-/-</span> FREE</p></td>
+            </tr>
+            <tr>
+                <td><p>DRIVES</p></td>
+                <td> >> </td>
+                <td id="stats-drives" style="text-align: right;"><p><span id="stats-drives">- / -</span> ONLINE</p></td>
+            </tr>
+            <tr>
+                <td><p>LOAD</p></td>
+                <td> >> </td>
+                <td id="stats-load" style="text-align: right;"><p>25% CPU</p></td>
+            </tr>
+            </table>
+
+        </article>
+        </aside>
+        </div>
+
+        <footer>
+
+        </footer>
+
+    </body>
+    <script src="/script.js"></script>
+</html>
